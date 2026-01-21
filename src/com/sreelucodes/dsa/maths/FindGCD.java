@@ -23,7 +23,9 @@ public class FindGCD {
 
     }
 
-    //Euclidean Algorithm
+    //Different Input: (48, 18), (56, 98), (101, 10), (0, 5), (-48, 18)
+    //Expected Output: 6, 14, 1, 5, 6
+    //Approach: Euclidean Algorithm
 
     private static int findGCD(int num1, int num2) {
         num1 = Math.abs(num1);
