@@ -7,6 +7,7 @@ public class CountDigits {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number to count digits : ");
         int number = scanner.nextInt() ;
+        scanner.close();
 
         System.out.println("The number of digits in "+number+" is "+countDigits(Math.abs(number)));
     }
