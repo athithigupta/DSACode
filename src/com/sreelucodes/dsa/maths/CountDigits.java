@@ -9,7 +9,7 @@ public class CountDigits {
         int number = scanner.nextInt() ;
         scanner.close();
 
-        System.out.println("The number of digits in "+number+" is "+countDigits(Math.abs(number)));
+        System.out.println("The number of digits in "+number+" is "+countDigitsLog(Math.abs(number)));
     }
 
     private static int countDigits(int number) {
@@ -21,5 +21,9 @@ public class CountDigits {
         }
         return count;
 
+    }
+    private static int countDigitsLog(int n){
+        if(n==0){return 1;}
+        return (int)Math.log10(n)+1;
     }
 }
